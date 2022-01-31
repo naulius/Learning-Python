@@ -15,4 +15,9 @@ print(2+ 2)
 print("Hello Vitaliy")
 
 
+pi = 3.14159
+radius = 2.2
+area = pi * (radius ** 2)
+radius = radius + 1
+print(radius)
 
