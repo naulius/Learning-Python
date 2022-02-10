@@ -22,7 +22,6 @@ with Example("If, else, conditions, concatenate strings, while loops, for loops"
              note(n)
              n = n + 1
 
-
     with Example("for loops"):
         for n in range (5):
             note(n)
