@@ -20,3 +20,7 @@ print(len(matches))
 
 for match in re.finditer("phone", text):
     print(match.span())
+
+text = "My phone number is 408-555-7777"
+phone = re.search(r"\d\d\d-\d\d\d-\d\d\d\d", text)
+print(phone.group())
