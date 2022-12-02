@@ -12,3 +12,5 @@ result = func_one(1000000)
 end_time = time.time()
 elapsed_time = end_time - start_time
 print(elapsed_time)
+
+import timeit
