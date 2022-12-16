@@ -20,3 +20,12 @@ print(soup)
 print(soup.select("title"))
 print(soup.select("p"))
 
+res = requests.get("https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)")
+soup = bs4.BeautifulSoup(res.text, "lxml")
+print(soup)
+print(soup.select(".thumbimage"))
+computer = soup.select(".thumbimage")[0]
+print(computer["src"])
+
+image_link = requests.get("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/One_of_Deep_Blue%27s_processors_%282586060990%29.jpg")
+print(image_link.content)
